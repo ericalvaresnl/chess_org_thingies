@@ -1,0 +1,16 @@
+{
+    "name": "ericalvaresnl/chess_org_thingies",
+    "description": "Chess Organization Thingies",
+    "type": "drupal-profile",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "drupal/event": "dev-1.x",
+        "drupal/fullcalendar_view": "2.0.0-rc9",
+        "drupal/smart_trim": "1.1.0"
+    }
+}
