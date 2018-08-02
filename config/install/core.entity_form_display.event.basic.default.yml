@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - event.event_type.basic
+    - field.field.event.basic.field_date
+  module:
+    - datetime
+id: event.basic.default
+targetEntityType: event
+bundle: basic
+mode: default
+content:
+  field_date:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }
